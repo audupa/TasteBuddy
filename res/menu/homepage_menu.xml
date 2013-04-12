@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+       android:id="@+id/shareDish"
+       android:title="@string/share_menu"
+       android:showAsAction="ifRoom|withText"
+   />
+    
+    <!-- android:icon="@drawable/location_icon1" -->
+    
+<!--     android:icon="@android:drawable/ic_menu_share" -->
+   
+   <!-- <item
+       android:id="@+id/dishSearch"
+       android:icon="@android:drawable/ic_menu_search"
+       android:actionViewClass="android.widget.SearchView"
+       android:title="@string/home_menu_search"
+       android:showAsAction="ifRoom|collapseActionView"
+   /> -->
+
+</menu>

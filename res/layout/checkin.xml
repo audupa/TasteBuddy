@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	    <AutoCompleteTextView
+	        
+	        android:id="@+id/autocomplete_dishes"
+	        android:layout_width="305dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_weight="0.28"
+	        android:background="@drawable/rounded_edit_box"
+	        android:drawableRight="@android:drawable/ic_btn_speak_now"
+	        android:ems="10"
+	        android:hint="@string/dish_hint"
+	        android:maxLength="20"
+	        android:maxWidth="20dp"
+	        android:paddingLeft="15dp"
+	        android:paddingRight="15dp" >
+	    </AutoCompleteTextView>
+
+	    <ImageView
+	        android:id="@+id/add_item"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="2dp"
+	        android:src="@android:drawable/ic_input_add" />
+	</LinearLayout>
+	
+    <ImageView
+       android:id="@+id/dish_photo"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_weight="0.99"
+       android:padding="30dp" />
+
+    <RatingBar
+        android:id="@+id/widget36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="145dp"
+        android:layout_y="33dp"
+        android:paddingTop="50dp"
+        android:animateLayoutChanges="true" />
+
+    <EditText
+        android:id="@+id/widget37"
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:layout_weight="0.30"
+        android:layout_x="22dp"
+        android:layout_y="271dp"
+        android:hint="Review"
+        android:paddingTop="0dp"
+        android:textSize="18sp" 
+        android:animateLayoutChanges="true"/>
+
+    <!--
+         <EditText
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:singleLine="false"
+    android:lines="5"
+    android:hint="@string/dish_hint"
+    android:layout_marginLeft="10dip"
+    android:layout_marginRight="10dip" />
+    -->
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<!-- 	<item
+       android:id="@+id/camera"
+       
+       android:icon="@android:drawable/ic_menu_camera"
+       android:showAsAction="ifRoom|withText"
+   />
+ 
+    <item
+        android:id="@+id/search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionViewClass="android.widget.SearchView"
+    />
+ -->
+ 	<item
+       android:id="@+id/checkin"
+       android:title="@string/checkin_actionbar"
+       android:showAsAction="ifRoom|withText"
+   />    
+
+</menu>

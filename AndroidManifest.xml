@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+
+    <application
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+
+        <!-- android:theme="@android:style/Theme.Holo.Light.DarkActionBar" -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name="com.example.LoginActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+       <!--  <activity
+            android:name="com.example.PreLoginActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> -->
+        
+         <activity
+            android:name="com.example.MapsActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_activity_maps" >
+               <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.HomePageActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_nearby_places"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.NearbyPlacesActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_nearby_places"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.RestaurantActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_nearby_places"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.CheckInActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_nearby_places"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.ShareDishActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/share_dish_title"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.activity.ReviewActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/review_title"
+            android:screenOrientation="portrait" >
+>
+        </activity>
+        <activity
+            android:name="com.example.FragmentTabsPager"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+>
+        </activity>
+       <!--  <activity
+            android:name="com.example.MapsActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/title_activity_maps" >
+        </activity> -->
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>
